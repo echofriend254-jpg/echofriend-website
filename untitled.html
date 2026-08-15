@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Echofriend Ke | Social Media Management & Brand Strategy Kenya</title>
+    <meta name="description" content="Echofriend Ke provides expert social media management, targeted digital marketing, and impactful business brand strategy to amplify your business reach online.">
+    <meta name="keywords" content="Social Media Management Kenya, Echofriend Ke, Digital Marketing Nairobi, Brand Strategy, Business Branding Kenya, Social Media Manager">
+    <meta name="author" content="Echofriend Ke">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Echofriend Ke - Amplify Your Brand Online">
+    <meta property="og:description" content="Professional Social Media Management, Digital Marketing, and Brand Identity services based in Kenya.">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eefef8',
+                            100: '#d7fdf0',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            900: '#064e3b',
+                            accent: '#6366f1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #059669 0%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <!-- Structured Data / JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Echofriend Ke",
+      "email": "echofriend254@gmail.com",
+      "telephone": "+254790867010",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "KE"
+      },
+      "priceRange": "$$",
+      "description": "Social Media Management, Social Media Marketing, and Business Brand Strategy Services."
+    }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen selection:bg-brand-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glass-card transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-accent flex items-center justify-center text-white text-xl font-bold shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+                        E
+                    </div>
+                    <span class="text-2xl font-extrabold tracking-tight text-slate-900">Echofriend<span class="text-brand-600">.ke</span></span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
+                    <a href="#about" class="hover:text-brand-600 transition-colors">About</a>
+                    <a href="#services" class="hover:text-brand-600 transition-colors">Services</a>
+                    <a href="#previewer" class="hover:text-brand-600 transition-colors">Live Mockup</a>
+                    <a href="#pricing" class="hover:text-brand-600 transition-colors">Package Calculator</a>
+                    <a href="#contact" class="hover:text-brand-600 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Header CTAs -->
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="https://wa.me/254790867010?text=Hi%20Echofriend%20Ke,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-emerald-200 text-brand-700 bg-brand-50 hover:bg-brand-100 font-semibold text-sm transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-600 text-base"></i> WhatsApp
+                    </a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-xl bg-slate-900 text-white hover:bg-slate-800 font-semibold text-sm shadow-md transition-all">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-600 hover:text-brand-600 font-medium">About</a>
+            <a href="#services" class="block py-2 text-slate-600 hover:text-brand-600 font-medium">Services</a>
+            <a href="#previewer" class="block py-2 text-slate-600 hover:text-brand-600 font-medium">Live Mockup</a>
+            <a href="#pricing" class="block py-2 text-slate-600 hover:text-brand-600 font-medium">Package Calculator</a>
+            <a href="#contact" class="block py-2 text-slate-600 hover:text-brand-600 font-medium">Contact</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="https://wa.me/254790867010?text=Hi%20Echofriend%20Ke,%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" class="w-full text-center py-2.5 rounded-xl bg-brand-50 text-brand-700 font-semibold text-sm">
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.brand.100),theme(colors.slate.50))] opacity-60"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100/80 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Available for New Growth Projects
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15]">
+                            We turn your social media into a <span class="gradient-text">Revenue Engine</span>
+                        </h1>
+                        
+                        <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                            <strong>Echofriend Ke</strong> builds powerful brand identities, high-converting social campaigns, and organic community management that gets your business noticed and loved.
+                        </p>
+                        
+                        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold shadow-lg shadow-brand-600/30 transition-all text-center">
+                                Claim Free Strategy Session
+                            </a>
+                            <a href="#pricing" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 font-semibold transition-all text-center">
+                                Calculate Package
+                            </a>
+                        </div>
+
+                        <!-- Highlights -->
+                        <div class="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                            <div>
+                                <p class="text-2xl font-bold text-slate-900">100%</p>
+                                <p class="text-xs text-slate-500">Tailored Strategy</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-slate-900">3.5x</p>
+                                <p class="text-xs text-slate-500">Avg. Reach Boost</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-slate-900">24/7</p>
+                                <p class="text-xs text-slate-500">Brand Protection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual / Feature Card -->
+                    <div class="lg:col-span-5">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-brand-500 to-brand-accent rounded-3xl blur opacity-30"></div>
+                            <div class="relative bg-white rounded-2xl shadow-2xl p-6 border border-slate-100">
+                                <div class="flex items-center gap-3 pb-4 border-b border-slate-100">
+                                    <div class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-bold text-lg">
+                                        EK
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-slate-900">Echofriend Ke</h3>
+                                        <p class="text-xs text-slate-500">Digital Brand Manager</p>
+                                    </div>
+                                    <span class="ml-auto text-xs bg-emerald-50 text-emerald-700 font-medium px-2.5 py-1 rounded-full border border-emerald-100">Active</span>
+                                </div>
+
+                                <div class="py-6 space-y-4">
+                                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-2">
+                                        <div class="flex justify-between text-xs font-semibold text-slate-600">
+                                            <span>Monthly Engagement Growth</span>
+                                            <span class="text-emerald-600">+184%</span>
+                                        </div>
+                                        <div class="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
+                                            <div class="w-4/5 h-full bg-brand-500 rounded-full"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="p-3 bg-brand-50/50 rounded-xl border border-brand-100/50">
+                                            <p class="text-xs text-slate-500">Consistently Posted</p>
+                                            <p class="text-lg font-bold text-brand-700">Content Calendar</p>
+                                        </div>
+                                        <div class="p-3 bg-indigo-50/50 rounded-xl border border-indigo-100/50">
+                                            <p class="text-xs text-slate-500">Ad Conversion</p>
+                                            <p class="text-lg font-bold text-indigo-700">High ROI</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-4 rounded-xl bg-slate-900 text-white space-y-1">
+                                        <div class="flex items-center gap-2 text-xs text-amber-400 font-semibold">
+                                            <i class="fa-solid fa-star"></i> Client Satisfaction First
+                                        </div>
+                                        <p class="text-xs text-slate-300">"Echofriend transformed our online presence and tripled our inbound leads in 60 days."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Our Expertise</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Core Services Designed for Growth</p>
+                    <p class="text-slate-600 mt-3 text-base">From content creation to targeted advertising and brand identity, we deliver end-to-end digital excellence.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:shadow-xl transition-all group">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-100 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-hashtag"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Social Media Management</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Consistent, engaging content creation, page optimization, automated scheduling, and community moderation for Instagram, Facebook, LinkedIn, TikTok & X.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2">
+                            <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Monthly Content Calendars</li>
+                            <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Audience Engagement & Replies</li>
+                            <li><i class="fa-solid fa-check text-brand-500 mr-2"></i> Performance Analytics</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:shadow-xl transition-all group">
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Social Media Marketing & Ads</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Data-driven paid ad campaigns (Meta Ads, TikTok Ads) designed to reach your precise target audience, generate leads, and boost sales revenue.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2">
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i> Targeted Audience Research</li>
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i> Ad Creative & Copywriting</li>
+                            <li><i class="fa-solid fa-check text-indigo-500 mr-2"></i> A/B Testing & Optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-brand-200 hover:shadow-xl transition-all group">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Business Brand Identity</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Complete brand creation including logo development, brand voice guides, typography, visual theme guidelines, and marketing graphics.
+                        </p>
+                        <ul class="text-xs text-slate-500 space-y-2">
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Logo & Kit Design</li>
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Brand Guidelines</li>
+                            <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Social Templates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Live Post Preview Tool -->
+        <section id="previewer" class="py-20 bg-slate-100/70 border-y border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider">Interactive Tool</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mt-2">See Your Brand Content in Action</h2>
+                    <p class="text-slate-600 text-sm mt-2">Type your message below to preview how Echofriend Ke crafts social media posts across various platforms.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <!-- Input Controls -->
+                    <div class="lg:col-span-5 bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Brand Name</label>
+                            <input type="text" id="preview-brand-name" value="Your Brand Name" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Post Caption</label>
+                            <textarea id="preview-caption" rows="4" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">Transform your business presence online! 🚀 Partner with Echofriend Ke to double your engagement and get high-converting social campaigns designed for your brand.</textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Hashtags</label>
+                            <input type="text" id="preview-hashtags" value="#EchofriendKe #DigitalMarketing #BusinessGrowth #KenyaBusiness" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-700 mb-1">Select Platform</label>
+                            <div class="grid grid-cols-3 gap-2">
+                                <button onclick="setPlatform('instagram')" id="btn-insta" class="py-2 rounded-xl border border-slate-300 font-semibold text-xs flex items-center justify-center gap-2 bg-slate-900 text-white">
+                                    <i class="fa-brands fa-instagram text-pink-500"></i> Instagram
+                                </button>
+                                <button onclick="setPlatform('linkedin')" id="btn-linkedin" class="py-2 rounded-xl border border-slate-300 font-semibold text-xs flex items-center justify-center gap-2 hover:bg-slate-50">
+                                    <i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn
+                                </button>
+                                <button onclick="setPlatform('twitter')" id="btn-twitter" class="py-2 rounded-xl border border-slate-300 font-semibold text-xs flex items-center justify-center gap-2 hover:bg-slate-50">
+                                    <i class="fa-brands fa-x-twitter"></i> X/Twitter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Mockup Display -->
+                    <div class="lg:col-span-7 flex justify-center">
+                        <div class="w-full max-w-md bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+                            <!-- Card Header -->
+                            <div class="p-4 border-b border-slate-100 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-500 to-indigo-500 text-white flex items-center justify-center font-bold">
+                                    <span id="mock-avatar-initial">Y</span>
+                                </div>
+                                <div>
+                                    <h4 id="mock-brand-title" class="font-bold text-slate-900 text-sm">Your Brand Name</h4>
+                                    <p class="text-xs text-slate-400">Sponsored • Promoted by Echofriend Ke</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical ml-auto text-slate-400"></i>
+                            </div>
+
+                            <!-- Post Content Body -->
+                            <div class="p-4 space-y-3">
+                                <p id="mock-body" class="text-slate-800 text-sm whitespace-pre-line">Transform your business presence online! 🚀 Partner with Echofriend Ke to double your engagement and get high-converting social campaigns designed for your brand.</p>
+                                <p id="mock-tags" class="text-brand-600 text-xs font-medium">#EchofriendKe #DigitalMarketing #BusinessGrowth #KenyaBusiness</p>
+                            </div>
+
+                            <!-- Mock Image Visual -->
+                            <div class="h-56 bg-slate-800 flex flex-col items-center justify-center text-white p-6 text-center relative overflow-hidden">
+                                <div class="absolute inset-0 bg-gradient-to-tr from-brand-900 to-indigo-900 opacity-80"></div>
+                                <div class="relative z-10 space-y-2">
+                                    <span class="px-3 py-1 bg-white/20 backdrop-blur rounded-full text-xs font-semibold">Brand Strategy in Action</span>
+                                    <h3 id="mock-img-text" class="text-xl font-extrabold text-white">Your Brand Name</h3>
+                                    <p class="text-xs text-slate-200">High Impact Social Media Marketing</p>
+                                </div>
+                            </div>
+
+                            <!-- Mock Engagement Bar -->
+                            <div class="p-4 border-t border-slate-100 bg-slate-50 flex items-center justify-between text-slate-500 text-xs font-medium">
+                                <span><i class="fa-solid fa-heart text-red-500 mr-1"></i> 1,248 Likes</span>
+                                <span><i class="fa-solid fa-comment text-blue-500 mr-1"></i> 94 Comments</span>
+                                <span><i class="fa-solid fa-share text-brand-500 mr-1"></i> Share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Package / Cost Estimator Calculator -->
+        <section id="pricing" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider">Transparent Quote</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Custom Package Estimator</h2>
+                    <p class="text-slate-600 text-sm mt-2">Tailor a plan that meets your exact budget and goals. Instant estimate with transparent delivery.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 bg-slate-50 p-6 md:p-10 rounded-3xl border border-slate-200">
+                    <div class="lg:col-span-7 space-y-6">
+                        <!-- Step 1: Social Platforms -->
+                        <div>
+                            <label class="block font-bold text-slate-800 text-sm mb-3">1. Select Target Platforms</label>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl flex items-center gap-2 hover:border-brand-500 text-xs font-semibold">
+                                    <input type="checkbox" checked class="calc-platform accent-brand-600" value="75" onchange="calculateTotal()"> Instagram
+                                </label>
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl flex items-center gap-2 hover:border-brand-500 text-xs font-semibold">
+                                    <input type="checkbox" checked class="calc-platform accent-brand-600" value="75" onchange="calculateTotal()"> Facebook
+                                </label>
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl flex items-center gap-2 hover:border-brand-500 text-xs font-semibold">
+                                    <input type="checkbox" class="calc-platform accent-brand-600" value="90" onchange="calculateTotal()"> LinkedIn
+                                </label>
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl flex items-center gap-2 hover:border-brand-500 text-xs font-semibold">
+                                    <input type="checkbox" class="calc-platform accent-brand-600" value="90" onchange="calculateTotal()"> TikTok / X
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Post Frequency -->
+                        <div>
+                            <label class="block font-bold text-slate-800 text-sm mb-3">2. Posts Per Week</label>
+                            <div class="grid grid-cols-3 gap-3">
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl text-center hover:border-brand-500 text-xs font-semibold">
+                                    <input type="radio" name="freq" value="120" checked class="accent-brand-600" onchange="calculateTotal()"> 3 Posts / Week
+                                </label>
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl text-center hover:border-brand-500 text-xs font-semibold">
+                                    <input type="radio" name="freq" value="200" class="accent-brand-600" onchange="calculateTotal()"> 5 Posts / Week
+                                </label>
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl text-center hover:border-brand-500 text-xs font-semibold">
+                                    <input type="radio" name="freq" value="300" class="accent-brand-600" onchange="calculateTotal()"> Daily (7 Posts)
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Add-on Services -->
+                        <div>
+                            <label class="block font-bold text-slate-800 text-sm mb-3">3. Additional Growth Services</label>
+                            <div class="space-y-2">
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl flex items-center justify-between hover:border-brand-500 text-xs font-semibold">
+                                    <span class="flex items-center gap-2"><input type="checkbox" class="calc-addon accent-brand-600" value="100" onchange="calculateTotal()"> Full Business Brand Identity & Logo Design</span>
+                                    <span class="text-brand-600">+$100</span>
+                                </label>
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl flex items-center justify-between hover:border-brand-500 text-xs font-semibold">
+                                    <span class="flex items-center gap-2"><input type="checkbox" class="calc-addon accent-brand-600" value="80" onchange="calculateTotal()"> Paid Ads Campaign Setup & Management</span>
+                                    <span class="text-brand-600">+$80</span>
+                                </label>
+                                <label class="cursor-pointer border border-slate-200 bg-white p-3 rounded-xl flex items-center justify-between hover:border-brand-500 text-xs font-semibold">
+                                    <span class="flex items-center gap-2"><input type="checkbox" class="calc-addon accent-brand-600" value="50" onchange="calculateTotal()"> Monthly Analytics & Competitor Report</span>
+                                    <span class="text-brand-600">+$50</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Summary Display -->
+                    <div class="lg:col-span-5 bg-slate-900 text-white p-8 rounded-2xl flex flex-col justify-between shadow-xl">
+                        <div>
+                            <h3 class="text-lg font-bold border-b border-slate-800 pb-4">Estimated Investment</h3>
+                            <div class="my-6">
+                                <p class="text-xs text-slate-400">Estimated Monthly Package</p>
+                                <div class="flex items-baseline gap-2 mt-1">
+                                    <span id="calc-price" class="text-4xl font-extrabold text-emerald-400">$270</span>
+                                    <span class="text-xs text-slate-400">/ month</span>
+                                </div>
+                                <p class="text-[11px] text-slate-400 mt-2">* Flexible terms. Custom options available in KES on request.</p>
+                            </div>
+
+                            <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800 pt-4">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Full Content Strategy</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Dedicated Account Management</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Echofriend Ke Quality Guarantee</li>
+                            </ul>
+                        </div>
+
+                        <button onclick="requestCalculatedQuote()" class="w-full mt-6 py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl transition-all shadow-lg text-sm flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Book This Custom Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Booking Section -->
+        <section id="contact" class="py-20 bg-slate-900 text-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider">Let's Connect</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">Ready to Elevate Your Brand?</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Reach out today for a free initial consultation. We'll review your current social handles and present a tailored roadmap to achieve your business goals.
+                        </p>
+
+                        <div class="space-y-4 pt-4">
+                            <a href="mailto:echofriend254@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 transition-all">
+                                <div class="w-10 h-10 rounded-lg bg-brand-500/20 text-brand-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Email Us Directly</p>
+                                    <p class="text-sm font-semibold text-white">echofriend254@gmail.com</p>
+                                </div>
+                            </a>
+
+                            <a href="https://wa.me/254790867010" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 transition-all">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Call / WhatsApp</p>
+                                    <p class="text-sm font-semibold text-white">+254 790 867010</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7 bg-white text-slate-800 p-8 rounded-3xl shadow-2xl">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Send Us a Direct Message</h3>
+                        <p class="text-xs text-slate-500 mb-6">Fill out the form below and we will get back to you within 2-4 hours.</p>
+
+                        <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Your Name *</label>
+                                    <input type="text" id="form-name" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Business Name</label>
+                                    <input type="text" id="form-business" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm" placeholder="Company Ltd">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Email Address *</label>
+                                    <input type="email" id="form-email" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm" placeholder="name@company.com">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-700 mb-1">Phone Number *</label>
+                                    <input type="tel" id="form-phone" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm" placeholder="+254 7...">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Primary Interest</label>
+                                <select id="form-service" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm bg-white">
+                                    <option value="Full Management">Social Media Management</option>
+                                    <option value="Paid Ads">Social Media Marketing & Paid Ads</option>
+                                    <option value="Branding">Business Brand Identity</option>
+                                    <option value="Custom Combo">Custom Combo Package</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1">Project Details / Message</label>
+                                <textarea id="form-message" rows="3" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm" placeholder="Tell us about your target audience and goals..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-bold rounded-xl transition-all shadow-md text-sm">
+                                Submit Inquiry
+                            </button>
+                        </form>
+
+                        <div id="form-status" class="hidden mt-4 p-4 rounded-xl text-xs font-semibold text-center"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <span class="text-xl font-extrabold text-white">Echofriend<span class="text-brand-500">.ke</span></span>
+                    <p class="text-xs text-slate-500 mt-1">Social Media Management • Digital Marketing • Brand Identity</p>
+                </div>
+
+                <div class="flex items-center gap-6 text-sm">
+                    <a href="mailto:echofriend254@gmail.com" class="hover:text-white transition-colors"><i class="fa-solid fa-envelope mr-1"></i> echofriend254@gmail.com</a>
+                    <a href="tel:+254790867010" class="hover:text-white transition-colors"><i class="fa-solid fa-phone mr-1"></i> +254790867010</a>
+                </div>
+
+                <p class="text-xs text-slate-600">&copy; <span id="current-year"></span> Echofriend Ke. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Set Copyright Year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Live Mockup Input Listeners
+        const brandInput = document.getElementById('preview-brand-name');
+        const captionInput = document.getElementById('preview-caption');
+        const hashtagsInput = document.getElementById('preview-hashtags');
+
+        const mockTitle = document.getElementById('mock-brand-title');
+        const mockImgText = document.getElementById('mock-img-text');
+        const mockAvatar = document.getElementById('mock-avatar-initial');
+        const mockBody = document.getElementById('mock-body');
+        const mockTags = document.getElementById('mock-tags');
+
+        function updateMockup() {
+            const name = brandInput.value.trim() || "Your Brand Name";
+            mockTitle.textContent = name;
+            mockImgText.textContent = name;
+            mockAvatar.textContent = name.charAt(0).toUpperCase() || 'Y';
+            mockBody.textContent = captionInput.value;
+            mockTags.textContent = hashtagsInput.value;
+        }
+
+        brandInput.addEventListener('input', updateMockup);
+        captionInput.addEventListener('input', updateMockup);
+        hashtagsInput.addEventListener('input', updateMockup);
+
+        function setPlatform(platform) {
+            const btnInsta = document.getElementById('btn-insta');
+            const btnLinkedin = document.getElementById('btn-linkedin');
+            const btnTwitter = document.getElementById('btn-twitter');
+
+            [btnInsta, btnLinkedin, btnTwitter].forEach(b => {
+                b.className = "py-2 rounded-xl border border-slate-300 font-semibold text-xs flex items-center justify-center gap-2 hover:bg-slate-50 text-slate-700";
+            });
+
+            if (platform === 'instagram') {
+                btnInsta.className = "py-2 rounded-xl border border-slate-300 font-semibold text-xs flex items-center justify-center gap-2 bg-slate-900 text-white";
+            } else if (platform === 'linkedin') {
+                btnLinkedin.className = "py-2 rounded-xl border border-slate-300 font-semibold text-xs flex items-center justify-center gap-2 bg-slate-900 text-white";
+            } else if (platform === 'twitter') {
+                btnTwitter.className = "py-2 rounded-xl border border-slate-300 font-semibold text-xs flex items-center justify-center gap-2 bg-slate-900 text-white";
+            }
+        }
+
+        // Package Price Calculator
+        function calculateTotal() {
+            let total = 0;
+
+            // Platforms
+            document.querySelectorAll('.calc-platform:checked').forEach(cb => {
+                total += parseInt(cb.value);
+            });
+
+            // Frequency
+            const selectedFreq = document.querySelector('input[name="freq"]:checked');
+            if (selectedFreq) {
+                total += parseInt(selectedFreq.value);
+            }
+
+            // Addons
+            document.querySelectorAll('.calc-addon:checked').forEach(cb => {
+                total += parseInt(cb.value);
+            });
+
+            document.getElementById('calc-price').textContent = `$${total}`;
+        }
+
+        function requestCalculatedQuote() {
+            const price = document.getElementById('calc-price').textContent;
+            const message = `Hello Echofriend Ke, I used your web calculator and would like to proceed with a package estimated at approximately ${price}/month. Please contact me to discuss details.`;
+            const encoded = encodeURIComponent(message);
+            window.open(`https://wa.me/254790867010?text=${encoded}`, '_blank');
+        }
+
+        // Form Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const status = document.getElementById('form-status');
+            const name = document.getElementById('form-name').value;
+            const service = document.getElementById('form-service').value;
+
+            status.className = "mt-4 p-4 rounded-xl text-xs font-semibold text-center bg-emerald-100 text-emerald-800 border border-emerald-200 block";
+            status.textContent = `Thank you ${name}! Your inquiry regarding "${service}" has been dispatched. We will reach out shortly!`;
+
+            // Reset Form
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>
+<html>
+
+</html><html>
+
+</html><html>
+
+</html><html>
+
+</html><html>
+
+</html>
